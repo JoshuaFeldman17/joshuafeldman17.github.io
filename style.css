@@ -106,6 +106,32 @@ body {
   border-radius: 0.5rem;
 }
 
+/* single button */
+.tab-list-single {
+  background-color: #45475A;
+  padding: 0.25rem;
+  border-radius: 0.75rem;
+  width: 100%;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.tab-button-single {
+  color: #A2A9C3;
+  background-color: #1E1E2E; 
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  font-family: 'Jetbrains Mono', monospace;
+  border-radius: 0.5rem;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.15s ease;
+}
+
+/* single button */
+
 .timeline-card {
   border-radius: 0.75rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);

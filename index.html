@@ -43,12 +43,16 @@
 
 <div class="resume-container">
   
-  <nav class="tab-list">
-    <!-- <button type="button" class="tab-button active" onclick="switchTab('work-panel', this)">Work</button> -->
-    <button type="button" class="tab-button" onclick="switchTab('education-panel', this)">Education</button>
-  </nav>
+  <!-- <nav class="tab-list">
+    <button type="button" class="tab-button active" onclick="switchTab('education-panel', this)">Education</button>
+    <button type="button" class="tab-button" onclick="switchTab('work-panel', this)">Work</button>
+  </nav> -->
 
-  <section id="education-panel" class="tab-panel">
+  <nav class="tab-list-single">
+    <button type="button" class="tab-button-single active">Education</button>
+  </nav> 
+
+  <section id="education-panel" class="tab-panel active">
     <div class="timeline-card">
       <ul class="timeline">
         <li class="timeline-item">
@@ -65,7 +69,7 @@
                 <time class="date-range">2022 - 2027</time>
               </div>
               <ul class="bullet-list">
-                <li></li>
+                <li>(grades)</li>
               </ul>
             </div>
           </div>
@@ -74,7 +78,7 @@
     </div>
   </section>
 
-  <!-- <section id="work-panel" class="tab-panel active">
+  <section id="work-panel" class="tab-panel">
     <div class="timeline-card">
       <ul class="timeline">
         <li class="timeline-item">
@@ -98,7 +102,7 @@
         </li>
       </ul>
     </div>
-  </section> -->
+  </section>
 
   
 
@@ -108,7 +112,7 @@
 
   <section id="projects">
     <div class="project-container">
-      <span class="title">Featured Projects</span>
+      <span class="title">Projects</span>
       <div class="project-card">
         <h3>FPV Drone</h3>
       </div>
@@ -132,6 +136,8 @@
     document.getElementById(panelId).classList.add('active');
     buttonElement.classList.add('active');
   }
+
+  switchTab('education-panel', document.querySelector('.tab-button.active'));
 </script>
 </body>
 </html>
